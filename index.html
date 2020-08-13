@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <title>BuildToolsGUI</title>
 
+    <link rel="stylesheet" href="siimple.css">
+
     <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
     <meta http-equiv="X-Content-Security-Policy" content="script-src 'self';">
   </head>
   <body>
-    <a>Hello World!</a>
+    <div class="siimple-content siimple-content--extra-small">
+        <div class="siimple--px-5 siimple--py-5">
+            <div class="siimple-h2 siimple--text-normal siimple--mb-1" id="header">
+                BuildToolsGUI
+            </div>
+            <div class="siimple-paragraph siimple-paragraph--lead">
+                Select a Minecraft Version to build its corresponding Spigot File
+            </div>
+            <select class="siimple-select siimple-select--fluid" id="versions">
+                <option selected>1.16.2</option>
+                <option>1.16.1</option>
+                <option>1.15.2</option>
+                <option>1.15.1</option>
+                <option>1.15</option>
+                <option>1.14.4</option>
+                <option>1.14.3</option>
+                <option>1.14.2</option>
+                <option>1.14.1</option>
+                <option>1.14</option>
+                <option>1.13.2</option>
+                <option>1.13.1</option>
+                <option>1.13</option>
+                <option>1.12.2</option>
+                <option>1.12.1</option>
+                <option>1.12</option>
+                <option>1.11</option>
+                <option>1.10.2</option>
+                <option>1.9.4</option>
+                <option>1.9.2</option>
+                <option>1.9</option>
+                <option>1.8.8</option>
+                <option>1.8.3</option>
+                <option>1.8</option>
+            </select>
+            <br><br>
+            <div class="siimple-btn siimple-btn--primary siimple-btn--fluid" id="selectDirectory">Select Folder</div>
+            <br><br>
+            <div class="siimple-field">
+                <div class="siimple-btn siimple-btn--primary siimple-btn--fluid siimple--text-bold" id="build">
+                    Build
+                </div>
+            </div>
+            <br><br>
+            <label class="siimple-label">Output</label><br>
+            <textarea class="siimple-textarea siimple-textarea--fluid" style="resize: none;" readonly="readonly" rows="8" id="output">Awaiting selection</textarea>
+            <br><br>
+            <div class="siimple-progress siimple-progress--primary siimple-progress--striped">
+                <span style="width:0%;" id="progress"></span>
+            </div>
+        </div>
+    </div>
   </body>
 </html>
