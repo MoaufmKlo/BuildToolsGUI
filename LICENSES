@@ -1,3 +1,6 @@
+├─ @ siimple /siimple 
+│  ├─ licenses: MIT
+│  └─ repository: https://github.com/siimple/siimple
 ├─ @sindresorhus/is@0.7.0
 │  ├─ licenses: MIT
 │  └─ repository: https://github.com/sindresorhus/is
