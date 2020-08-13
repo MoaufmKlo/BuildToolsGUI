@@ -1,0 +1,20 @@
+{
+    "name": "buildtoolsgui",
+    "version": "1.0.0",
+    "description": "Spigot BuildTools wrapped in a Graphical User Interface",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": "https://github.com/MoaufmKlo/BuildToolsGUI",
+    "author": {
+        "name": "MoaufmKlo",
+        "email": "hi@moaufmklo.com",
+        "url": "https://moaufmklo.com"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^9.2.0",
+        "electron-builder": "^22.8.0"
+    }
+}

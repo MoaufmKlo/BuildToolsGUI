@@ -1,2 +1,5 @@
 # Modules folder
-node-modules
+node_modules
+
+# Dist folder
+dist
