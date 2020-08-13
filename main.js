@@ -1,6 +1,5 @@
 // Modules
 const {app, BrowserWindow} = require("electron");
-const path = require("path");
 
 // Create window after initialization
 app.whenReady().then(function() {
