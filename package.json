@@ -1,6 +1,6 @@
 {
     "name": "buildtoolsgui",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "Spigot BuildTools wrapped in a Graphical User Interface",
     "main": "main.js",
     "scripts": {
@@ -13,6 +13,9 @@
         "url": "https://moaufmklo.com"
     },
     "license": "ISC",
+    "dependencies": {
+        "download": "8.0.0"
+    },
     "devDependencies": {
         "electron": "^9.2.0",
         "electron-builder": "^22.8.0",

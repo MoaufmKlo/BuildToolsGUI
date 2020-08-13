@@ -2958,6 +2958,76 @@ body{
     -webkit-appearance:none;
     -mz-appearance:none
 }
+.siimple-progress--dark{
+    display:block;
+    width:100%;
+    height:20px;
+    padding:0!important;
+    margin-top:0;
+    margin-bottom:20px;
+    border-radius:5px;
+    background-color:#181818;
+    overflow:hidden;
+    -webkit-appearance:none;
+    -mz-appearance:none
+}
+.siimple-progress--dark>span{
+    display:block;
+    height:100%;
+    overflow:hidden;
+    transition:all .3s;
+    position:relative;
+    text-align:center;
+    line-height:20px;
+    font-size:12px
+}
+.siimple-progress--dark--striped-fast>span::after,.siimple-progress--striped-slow>span::after,.siimple-progress--striped>span::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1px;
+    background-size:50px 50px;
+    background-image:linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent)
+}
+.siimple-progress--dark--striped>span::after{
+    -webkit-animation:siimple-progress-animation 2.5s linear infinite;
+    animation:siimple-progress-animation 2.5s linear infinite
+}
+.siimple-progress--dark--striped-fast>span::after{
+    -webkit-animation:siimple-progress-animation 1s linear infinite;
+    animation:siimple-progress-animation 1s linear infinite
+}
+.siimple-progress--dark--striped-slow>span::after{
+    -webkit-animation:siimple-progress-animation 4s linear infinite;
+    animation:siimple-progress-animation 4s linear infinite
+}
+.siimple-progress--dark.siimple-progress--primary>span{
+    background-color:#4e91e4;
+    color:#fff
+}
+.siimple-progress--dark.siimple-progress--success>span{
+    background-color:#4acf7f;
+    color:#fff
+}
+.siimple-progress--dark.siimple-progress--warning>span{
+    background-color:#fbc850;
+    color:#fff
+}
+.siimple-progress--dark.siimple-progress--error>span{
+    background-color:#ee675d;
+    color:#fff
+}
+.siimple-progress--dark.siimple-progress--dark>span{
+    background-color:#546778;
+    color:#fff
+}
+.siimple-progress--dark.siimple-progress--light>span{
+    background-color:#dde5ee;
+    color:#546778
+}
 .siimple-progress>span{
     display:block;
     height:100%;

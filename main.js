@@ -11,6 +11,7 @@ app.whenReady().then(function() {
         }
     });
 
+    win.removeMenu();
     win.loadFile("index.html");
 });
 
