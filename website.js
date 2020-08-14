@@ -20,7 +20,7 @@ document.getElementById("selectDirectory").onclick = function() {
 document.getElementById("build").onclick = async function() {
     if(window.downloadPath) {
         document.getElementById("build").classList.add("siimple-btn--disabled");
-        document.getElementById("output").innerHTML = "";
+        document.getElementById("output").innerHTML = "Downloading BuildTools";
 
         await download("https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar", window.downloadPath.replace(/\|_/g, "/"));
 
