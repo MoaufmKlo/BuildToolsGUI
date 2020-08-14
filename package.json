@@ -1,6 +1,6 @@
 {
     "name": "buildtoolsgui",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Spigot BuildTools wrapped in a Graphical User Interface",
     "main": "main.js",
     "scripts": {
