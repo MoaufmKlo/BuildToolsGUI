@@ -4,8 +4,8 @@ const {app, BrowserWindow} = require("electron");
 // Create window after initialization
 app.whenReady().then(function() {
     const win = new BrowserWindow({
-        width: 800,
-        height: 950,
+        width: 600,
+        height: 790,
         webPreferences: {
             nodeIntegration: true
         }
