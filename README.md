@@ -22,3 +22,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 
 [ISC](https://choosealicense.com/licenses/isc/)
+
+## What I learned from this
+
+- The basics of Electron and electron-builder
