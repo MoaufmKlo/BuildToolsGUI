@@ -1,7 +1,5 @@
-// Modules
 const {app, BrowserWindow} = require("electron");
 
-// Create window after initialization
 app.whenReady().then(function() {
     const win = new BrowserWindow({
         width: 600,
@@ -14,11 +12,9 @@ app.whenReady().then(function() {
     });
 
     win.removeMenu();
-    win.webContents.openDevTools();
     win.loadFile("index.html");
 });
 
-// Quit when all windows are closed
 app.on("window-all-closed", function() {
     app.quit();
 });
