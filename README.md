@@ -13,7 +13,7 @@ It has an easy-to-understand interface, which anyone can understand easily and i
 
 ## Screenshot(s)
 
-![Image of BuildToolsGUI light mode](https://www.spigotmc.org/attachments/buildtoolsgui2-png.544983/)
+![Image of BuildToolsGUI dark mode](https://i.imgur.com/QqkOR8z.png)
 
 ## Contributing
 
