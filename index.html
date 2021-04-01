@@ -1,68 +1,58 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>BuildToolsGUI</title>
 
-    <link rel="stylesheet" href="siimple.css">
+    <link rel="stylesheet" href="style.css">
 
     <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
     <meta http-equiv="X-Content-Security-Policy" content="script-src 'self';">
   </head>
   <body>
-    <div class="siimple-content siimple-content--extra-small">
-        <div class="siimple--px-5 siimple--py-5">
-            <div class="siimple-h2 siimple--text-normal siimple--mb-1" id="header">
-                BuildToolsGUI
-            </div>
-            <div class="siimple-paragraph siimple-paragraph--lead">
-                Select a Minecraft Version to build its corresponding Spigot File
-            </div>
-            <select class="siimple-select siimple-select--fluid" id="versions">
-                <option selected>latest</option>
-                <option>1.16.5</option>
-                <option>1.16.4</option>
-                <option>1.16.3</option>
-                <option>1.16.1</option>
-                <option>1.15.2</option>
-                <option>1.15.1</option>
-                <option>1.15</option>
-                <option>1.14.4</option>
-                <option>1.14.3</option>
-                <option>1.14.2</option>
-                <option>1.14.1</option>
-                <option>1.14</option>
-                <option>1.13.2</option>
-                <option>1.13.1</option>
-                <option>1.13</option>
-                <option>1.12.2</option>
-                <option>1.12.1</option>
-                <option>1.12</option>
-                <option>1.11</option>
-                <option>1.10.2</option>
-                <option>1.9.4</option>
-                <option>1.9.2</option>
-                <option>1.9</option>
-                <option>1.8.8</option>
-                <option>1.8.3</option>
-                <option>1.8</option>
-            </select>
-            <br><br>
-            <div class="siimple-btn siimple-btn--primary siimple-btn--fluid" id="selectDirectory">Select Folder</div>
-            <br><br>
-            <div class="siimple-field">
-                <div class="siimple-btn siimple-btn--primary siimple-btn--fluid siimple--text-bold" id="build">
-                    Build
-                </div>
-            </div>
-            <br><br>
-            <label class="siimple-label">Output</label><br>
-            <textarea class="siimple-textarea siimple-textarea--fluid" style="resize: none;" readonly="readonly" rows="8" id="output">Awaiting selection</textarea>
-            <br><br>
-            <div class="siimple-progress siimple-progress--primary siimple-progress--striped" id="progressbar">
-                <span style="width:0%;" id="progress"></span>
-            </div>
+    <div class="container">
+      <div class="wrapper">
+        <h1>BuildToolsGUI</h1>
+        <p>Select a Minecraft version to build it's corresponding Spigot version.</p>
+        <custom-select id="versions">
+          <option value="latest">Latest</option>
+          <option value="1.16.5">1.16.5</option>
+          <option value="1.16.4">1.16.4</option>
+          <option value="1.16.3">1.16.3</option>
+          <option value="1.16.2">1.16.2</option>
+          <option value="1.16.1">1.16.1</option>
+          <option value="1.15.2">1.15.2</option>
+          <option value="1.15.1">1.15.1</option>
+          <option value="1.15">1.15</option>
+          <option value="1.14.4">1.14.4</option>
+          <option value="1.14.3">1.14.3</option>
+          <option value="1.14.2">1.14.2</option>
+          <option value="1.14.1">1.14.1</option>
+          <option value="1.14">1.14</option>
+          <option value="1.13.2">1.13.2</option>
+          <option value="1.13.1">1.13.1</option>
+          <option value="1.13">1.13</option>
+          <option value="1.12.2">1.12.2</option>
+          <option value="1.12.1">1.12.1</option>
+          <option value="1.12">1.12</option>
+          <option value="1.11">1.11</option>
+          <option value="1.10.2">1.10.2</option>
+          <option value="1.9.4">1.9.4</option>
+          <option value="1.9.2">1.9.2</option>
+          <option value="1.19">1.9</option>
+          <option value="1.8.8">1.8.8</option>
+          <option value="1.8.3">1.8.3</option>
+          <option value="1.8">1.8</option>
+        </custom-select>
+        <a class="btn" href="#" id="selectDirectory">Select Folder</a>
+        <a class="btn" href="#" id="build" style="margin: 0 0 40px 0;">Build</a>
+        <span class="muted">Output</span>
+        <custom-log></custom-log>
+        <div id="progress" class="progress">
+          0%
+          <div id="progress-bar" class="progress-bar"></div>
         </div>
+      </div>
     </div>
 
     <script src="website.js"></script>
